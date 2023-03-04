@@ -1,17 +1,14 @@
 import React from 'react';
 
-export default function Search ({movie, setMovie, movieData}) {
-console.log(movieData?.data?.results)
-
-const movies = movieData?.data?.results
+export default function Search ({input, setInput}) {
 
     return (
         <form>
             <input 
                 type="text"
-                value={movie}
+                value={input}
                 placeholder='Enter a movie...'
-                onChange={event => setMovie(event.target.value)}
+                onChange={event => setInput(event.target.value)}
                 
                 // onKeyPress={event => getMovies(event)}
             />

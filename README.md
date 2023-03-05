@@ -11,7 +11,7 @@ Install the required dependencies using npm install.
 
 Create a .env file in the root directory of your project and add the following environment variables: REACT_APP_API_KEY=your_movie_db_api_key
 
-You can obtain your API key by creating an account on The Movie DB website [here] (https://www.themoviedb.org/settings/api).
+You can obtain your API key by creating an account on The Movie DB website [here](https://www.themoviedb.org/settings/api).
 
 Start the app using npm start.
 ## **Usage**
@@ -22,7 +22,7 @@ React
 Bootstrap
 Axios
 ## **API Reference**
-This app uses The Movie DB API to fetch movie data. You can find the API documentation [here] (https://developers.themoviedb.org/3/getting-started/introduction).
+This app uses The Movie DB API to fetch movie data. You can find the API documentation [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
 
 

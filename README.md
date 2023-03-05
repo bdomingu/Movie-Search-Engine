@@ -25,4 +25,6 @@ Axios
 This app uses The Movie DB API to fetch movie data. You can find the API documentation [here](https://developers.themoviedb.org/3/getting-started/introduction).
 
 
+![Screenshot from 2023-03-04 22-25-55](https://user-images.githubusercontent.com/92413990/222943264-d0a1b45d-9beb-407e-a8c1-87d45babf215.png)
 
+Demo [here](https://watch.screencastify.com/v/5rggNAVIICIzAISEzhxW)

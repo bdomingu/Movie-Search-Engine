@@ -1,13 +1,77 @@
+body {
+  background-image: url('/src/img/pop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
+}
+
 .App {
   text-align: center;
 }
 
+.movie-container {
+  position: absolute;
+  background-color: white;
+  left:25%;
+  width:50%;
+ 
+}
+
 .item {
   display:flex;
-  flex-direction: column
+  flex-direction: row;
+  /* width: 50%; */
+  /* margin: 0 auto; */
+  margin-left: 100px;
+  /* margin-right: 200px; */
+  /* gap: 5px; */
 }
 
 img{
-  max-width: 100px;
-  margin-left: 15%;
+  max-width: 120px;
+  padding: 20px;
+}
+
+p {
+  padding: 50px;
+}
+
+.broken-image {
+  max-width: 125px;
+
+}
+
+.navbar-heading {
+  font-size: 30px !important;
+  color: rgb(120,202,173)!important;
+}
+
+.movie-logo {
+  position: absolute;
+  bottom: -10px;
+  left:-5px;
+}
+
+.movie-title {
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 600;
+  text-align: left;
+}
+
+.date {
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 400;
+}
+
+.search-form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-heading {
+  font-family: 'Rubik', sans-serif; 
+  font-weight: 600;
 }

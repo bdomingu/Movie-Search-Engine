@@ -2,9 +2,8 @@ import './App.css';
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Search from './components/Search.js'
 import SearchResults from './components/SearchResults';
-
+import Navigation from './components/Navigation';
 
 function App() {
   const [input, setInput] = useState('')
@@ -18,6 +17,7 @@ function App() {
     try{
       const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&language=en-US&page=${currentPage}&include_adult=false&query=${input}`);
       const results = response.data.results;
+      console.log(results)
       return results;
     } catch (error) {
       console.error(error);
@@ -73,10 +73,18 @@ function App() {
 
   }, [currentPage]);
 
+  const convertDate = (date) => {
+    const splitDate = date.split('-');
+    return splitDate[0]
+  }
+
   return (
     <div className="App">
-     <Search input={input} setInput={setInput}/>
-     <SearchResults searchResults={searchResults} />
+    <Navigation input={input} setInput={setInput}/>
+     {/* <Search input={input} setInput={setInput}/> */}
+     <div className='movie-container'>
+     <SearchResults convertDate={convertDate} searchResults={searchResults} />
+     </div>
     </div>
   );
 }

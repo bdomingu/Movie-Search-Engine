@@ -5,8 +5,7 @@ Search movies by title
 Filter movies by genres
 Infinite scrolling
 ## **Installation**
-Clone the repository to your local machine using git clone https://github.com/your-username/movie-search-engine.git
-
+Clone the repository to your local machine using git clone https://github.com/your-username/Movie-Search-Engine.git
 Install the required dependencies using npm install.
 
 Create a .env file in the root directory of your project and add the following environment variables: REACT_APP_API_KEY=your_movie_db_api_key
